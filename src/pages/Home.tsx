@@ -51,8 +51,8 @@ const Home = () => {
   }, [isOnline]);
 
   useEffect(() => {
-    getNotes();
-  }, [getNotes]);
+    if (isOnline) getNotes();
+  }, [getNotes, isOnline]);
 
   // Handle online/offline status
   useEffect(() => {
