@@ -161,7 +161,7 @@ const Home = () => {
           <h1 className="text-2xl font-bold text-gray-800">My Notes 2</h1>
           <button
             onClick={handleRefresh}
-            className="bg-amber-600 text-white px-4 py-2 rounded-md transition"
+            className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-md transition"
           >
             {isLoading ? "Loading..." : "Refresh"}
           </button>
